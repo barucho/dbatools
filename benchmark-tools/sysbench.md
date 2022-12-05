@@ -25,12 +25,12 @@ Run the write workload on the EC2 sysbench client, using the following command:
 ```
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/pgsql/lib
 export PATH=$PATH:/usr/local/pgsql/bin/
-export dbip=pg-bm.coyhv9dq128h.us-east-1.rds.amazonaws.com
+export dbip=pg-bm.hostnamesefsf.com
 
 
 sysbench --test=/usr/local/share/sysbench/oltp.lua \
 --pgsql-host=$dbip --pgsql-db=postgres \
---pgsql-user=postgres --pgsql-password=postgres --pgsql-port=5432 \
+--pgsql-user=postgres --pgsql-password=***** --pgsql-port=5432 \
 --oltp-tables-count=250 --oltp-table-size=450000 --max-requests=0 --forced-shutdown \
 --report-interval=60 --oltp_simple_ranges=0 --oltp-distinct-ranges=0 \
 --oltp-sum-ranges=0 --oltp-order-ranges=0 --oltp-point-selects=0 --rand-type=uniform \
