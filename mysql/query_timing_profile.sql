@@ -17,3 +17,7 @@ show profile ALL for query 1\G
 
 -- stop profiling
 set profiling = 0; 
+
+
+-- events info 
+https://dev.mysql.com/doc/refman/5.7/en/general-thread-states.html

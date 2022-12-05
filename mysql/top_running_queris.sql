@@ -47,3 +47,6 @@ select * from sys.x$schema_table_statistics where table_schema not in ('mysql','
 -- files [io]  statistics
 select * from sys.x$io_global_by_file_by_bytes;
 select * from sys.x$io_global_by_wait_by_bytes;
+
+
+-- top wait events 
